@@ -10,9 +10,31 @@ class RecoverPasswordScreen extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+          children: <Widget>[
             // Campos para contraseña actual, nueva contraseña y repetir contraseña
+            TextField(
+              decoration: InputDecoration(
+                labelText: 'Contraseña actual',
+              ),
+            ),
+            SizedBox(height: 20),
+            TextField(
+              decoration: InputDecoration(
+                labelText: 'Nueva Contraseña',
+              ),
+            ),
+            SizedBox(height: 20),
+            TextField(
+              decoration: InputDecoration(
+                labelText: 'Repetir Contraseña',
+              ),
+            ),
+            SizedBox(height: 20),
             // Botón para realizar el cambio de contraseña
+            ElevatedButton(
+              onPressed: () {},
+              child: Text('Cambiar Contraseña'),
+            ),
           ],
         ),
       ),
